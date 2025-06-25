@@ -5,13 +5,16 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
+  srcDir: 'src/',
   css: ['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   modules: [
 
     '@nuxt/eslint',
@@ -23,7 +26,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@pinia/nuxt'
   ],
-  srcDir: 'src/',
+  
   vite: {
     plugins: [
       tsconfigPaths(),

@@ -2,16 +2,16 @@
 
 module.exports = {
 
-  content: [
-    "./components/**/*.{js,vue,ts}",
-    './src/**/*.{vue,js,ts}',
-    './app.vue',
-    './src/components/**/*.{vue,js,ts}',
-    './src/layouts/**/*.{vue,js,ts}'
-  ],
+content: [
+  './src/**/*.{vue,js,ts}',
+  './app.vue',
+  './src/components/**/*.{vue,js,ts}',
+  './src/layouts/**/*.{vue,js,ts}',
+],
+
 
   theme: {
-    
+
     screens: {
 
       // Layar Hp ukuran minimum       (Potrait)
