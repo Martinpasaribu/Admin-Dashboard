@@ -1,7 +1,7 @@
 
 
 <template>
-  <div class="flex min-h-screen bg-gray-800">
+  <div class="flex min-h-screen bg-pink-800">
     <Sidebar />
     <div class="flex flex-col flex-1">
       <Topbar />

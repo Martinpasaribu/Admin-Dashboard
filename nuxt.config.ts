@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tsconfigPaths from 'vite-tsconfig-paths'
+// import tailwindcss from "@tailwindcss/vite";
 
 
 export default defineNuxtConfig({
@@ -8,15 +9,16 @@ export default defineNuxtConfig({
   srcDir: 'src/',
   css: ['~/assets/css/main.css'],
 
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
+  
+  vite: {
+    plugins: [
+      tsconfigPaths(),
+        // tailwindcss(),
+    ]
   },
 
   modules: [
-
+    '@nuxtjs/tailwindcss',
     '@nuxt/eslint',
     '@nuxt/fonts',
     '@nuxt/icon',
@@ -26,12 +28,6 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@pinia/nuxt'
   ],
-  
-  vite: {
-    plugins: [
-      tsconfigPaths(),
-    ]
-  },
 
 
 })
